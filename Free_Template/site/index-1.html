@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
     <head>
-    <title>About Us</title>
+    <title>Reçete Sorgulama</title>
     <meta charset="utf-8">
-    <meta name="description" content="Your description">
-    <meta name="keywords" content="Your keywords">
-    <meta name="author" content="Your name">
+    <meta name="description" content="İlaçlarınızı kurye ile istediğiniz adrese teslim için tıklayınız.">
+    <meta name="keywords" content="Eczanem,eczane,E-czanem,ilaç,kurye">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -14,7 +13,6 @@
     <script src="js/bgstretcher.js"></script>
     <script>
 	$(function(){
-      //  Initialize Backgound Stretcher
       $('BODY').bgStretcher({
         images: ['images/slide-1.jpg'], 
 		imageWidth: 1600, 
@@ -24,22 +22,11 @@
     });
     </script>
 
-    <!--[if lt IE 8]>
-   <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
- 	<![endif]-->
-    <!--[if lt IE 9]>   
-    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-   <script src="js/html5shiv.js"></script>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>  
-  <![endif]-->
-
+    
     </head>
     <body>
 <div class="extra-block"> 
-      <!--==============================row-top=================================-->
+   
       <div class="row-top">
     <div class="main">
           <ul class="list-soc">
@@ -49,7 +36,7 @@
         </div>
   </div>
       
-      <!--==============================header=================================-->
+     
       
       <header>
     <div class="row-nav">
@@ -60,7 +47,6 @@
             <li><a href="index.html">Anasayfa</a></li>
             <li class="current"><a href="index-1.html">Reçete Sorgulama</a></li>
             <li><a href="index-2.html">Ürünler</a></li>
-            <li><a href="index-3.html">Galeri</a></li>
             <li><a href="index-4.html">İletişim</a></li>
           </ul>
         </nav>
@@ -68,42 +54,28 @@
       </div>
       </div>
   </header>
-  <!--==============================content=================================-->
+ 
     <section id="content">
   
     <div class="main-block">
     <div class="container_12">
           <div class="wrapper border-vert">
         <article class="grid_5">
-              <h3>Hoşgeldiniz</h3>
-              <figure class="img-rounded"><img src="images/page2-img1.jpg" alt="" /> </figure>
+              
+              <figure class="img-rounded"><img src="images/page2-img1.jpg" width="350" height="300"  alt="" /> </figure>
               <h4>Reçete Sorgulama</h4>
               <p>Eczanelerin mesai saati mi geçti? Eczaneye gidecek imkanınız mı yok? Siz zahmet etmeyin biz getirelim. Evinizde, iş yerinizde ya da herhangi bir yerde; mekan fark etmeksizin sizin için ilaçlarınızı ayağınıza getiriyoruz. Siparişinizi oluşturun ve arkanıza yaslanın. Sağlıklı Günler:) </p>
-              <a href="#" class="button">Reçete Sorgulama</a> </article>
-        <article class="grid_3 prefix_2">
-              <h3>Ürünler</h3>
-              <ul class="list-services">
-            <li>
-                  <figure class="img-rounded1"><img src="images/lustral.jpg" alt="" /> </figure>
-                  <h4><a href="#">Lustral</a></h4>
-                  <ul class="list">
-                <li><a href="#">Lustral (sertralin), genellikle depresyon tedavisi için kullanılan bir antidepresan türüdür.</a></li>
-                <li><a href="#">Panik atak, sosyal anksiyete bozukluğu, obsesif-kompulsif bozukluk ve travma sonrası stres bozukluğu olan kişiler için de reçete edilebilir.</a></li>
-                <li><a href="#">Beyinde serotonin düzeyini arttırarak ruh halini iyileştirmeye, panik atakları azaltmaya yardımcı olur.</a></li>
-              </ul>
-              <a href="#" class="button">Sepete Ekle</a>  
-             </li>
-            <li>
-                 <figure class="img-rounded1"><img src="images/acnelyse.png" alt="acnelyse" height="200px" width="300px" /> </figure>
-                  <h4><a href="#">Acnelyse</a></h4>
-                <ul class="list">
-                <li><a href="#">Çok etkili bir sivilce ilacıdır.</a></li>
-                <li><a href="#">Kullanıldığı bölgede derinin üst tabakasını ve alt tabakasını uyararak yenilenmesini sağlayan bu ilaç, içerisinde A vitamini bulundurduğundan egzama sorunlarını da ortadan kaldırıyor.</a></li>
-                <li><a href="#">Sedef hastalığı ve balık pulu tedavisinde aynı zamanda deri tabakasında kalınlaşması gibi cilt sorunlarının kurtarıcısı olan  Acnelyse kremi uzmana danışarak kullanabilirsiniz.</a></li>
-              </ul>
-             </li>
-          </ul>
-        <a href="#" class="button">Sepete Ekle</a> </article>
+            
+              <input href="action.php"   type="text" name="Reçete" id="" placeholder="Reçete Kodu">: <br>
+              <button class="button" onclick='document.getElementById("para4").style.display="block"'>Reçete Sorgula</button>  </article>
+              <article class="grid_3 prefix_2">
+                <ul class="list-services">
+              <li>
+                <h1 id="para4" style="display:none">Parol</h1>
+               </li>
+  
+            </ul> </article>
+        
       </div>
      </div>
   </div>  
@@ -111,10 +83,10 @@
  
  </div>
 <div class="block"> 
-      <!--==============================footer================================-->
+    
       <footer>
     <div class="main aligncenter">
-      <div class="privacy">E-czanem   &copy; 2022 <span>|</span> <a href="index-5.html" rel="nofollow">Gizlilik Politikası</a></div>
+      <div class="privacy">E-czanem   &copy; 2022  <a href="index-5.html" rel="nofollow"></a></div>
         </div>
   </footer>
     </div>
